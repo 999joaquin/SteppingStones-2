@@ -1,27 +1,39 @@
 {
   "compilerOptions": {
+    /* ---- Core settings ---- */
+    "target": "ES6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "target": "ES6",
-    "skipLibCheck": true,
+    "jsx": "preserve",
+
+    /* ---- Type-checking ---- */
     "strict": true,
+    "skipLibCheck": true,
     "noEmit": true,
-    "esModuleInterop": true,
+    "incremental": true,
+    "isolatedModules": true,
+
+    /* ---- Module / bundler ---- */
     "module": "esnext",
     "moduleResolution": "bundler",
+    "esModuleInterop": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
+
+    /* ---- Next.js plugin ---- */
+    "plugins": [{ "name": "next" }],
+
+    /* ---- Path alias (added) ---- */
+    "baseUrl": ".",                 // <- **required for "paths" to work**
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"]                // "@/lib/utils" → "./lib/utils"
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
