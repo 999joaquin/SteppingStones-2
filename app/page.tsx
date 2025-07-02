@@ -55,16 +55,30 @@ export default function HomePage() {
       <section className="py-20 lg:py-32 bg-gradient-to-br from-white to-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* LEFT COLUMN — TEXT  */}
             <div className="space-y-8">
+              {/* Logo */}
+              <Image
+                src="/images/logo.png"
+                alt="Stepping Stone logo"
+                width={120}
+                height={120}
+                priority
+                className="mx-auto mb-4"
+              />
+
+              {/* Heading & sub-copy */}
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-prata text-header leading-tight">
-                  Finding Your Perfect Match, One Step at a Time
+                  Warm. Intentional. Relation-Focused.
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Professional marriage facilitation services that bring together compatible souls through personalized
-                  matchmaking and relationship guidance.
+                  Professional marriage facilitation services that bring together compatible souls
+                  through personalized matchmaking and relationship guidance.
                 </p>
               </div>
+
+              {/* CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-primary hover:bg-primary-dark text-white">
                   <Link href="#contact" className="flex items-center">
@@ -72,6 +86,7 @@ export default function HomePage() {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
+
                 <Link href="/learn-more">
                   <Button
                     size="lg"
@@ -82,21 +97,9 @@ export default function HomePage() {
                   </Button>
                 </Link>
               </div>
-              <div className="flex items-center space-x-8 pt-4">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">500+</div>
-                  <div className="text-sm text-gray-600">Happy Couples</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">15+</div>
-                  <div className="text-sm text-gray-600">Years Experience</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">95%</div>
-                  <div className="text-sm text-gray-600">Success Rate</div>
-                </div>
-              </div>
             </div>
+
+            {/* RIGHT COLUMN — IMAGE */}
             <div className="relative">
               <div className="relative z-10">
                 <Image
@@ -107,7 +110,7 @@ export default function HomePage() {
                   className="rounded-2xl shadow-2xl"
                 />
               </div>
-              <div className="absolute -top-4 -right-4 w-full h-full bg-primary/10 rounded-2xl -z-10"></div>
+              <div className="absolute -top-4 -right-4 w-full h-full bg-primary/10 rounded-2xl -z-10" />
             </div>
           </div>
         </div>
@@ -222,7 +225,7 @@ export default function HomePage() {
                   <Heart className="h-12 w-12 text-primary" />
                 </div>
                 <h3 className="text-xl font-prata text-header mb-4">Eulene</h3>
-                <p className="text-gray-600 mb-4">Professional Counsellor & Operations Head</p>
+                <p className="text-gray-600 mb-4">Certified Marriage Facilitator</p>
                 <p className="text-sm text-gray-500">
                   Eulene holds a Master of Social Science (Professional Counselling) and a Graduate Diploma in
                   Counselling Psychology. She is a certified Prepare & Enrich and PREP counsellor, trained in
@@ -393,86 +396,51 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Our Values Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-5xl font-prata text-header mb-6">Success Stories</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Hear from couples who found their perfect match through SteppingStones.
+            <h2 className="text-3xl lg:text-4xl font-prata text-header mb-4">
+              “Matching – Relationship-Focused – Compatible Singles”
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              We facilitate intentional connections between individuals seeking lifelong commitment —
+              grounded in values, communication, and compatibility.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="bg-gray-50 shadow-lg">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-6 italic">
-                  "Sarah and her team helped us find each other when we had almost given up on love. Their personalized
-                  approach made all the difference."
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-12">
+            {/* Commitment */}
+            <div className="flex items-start">
+              <div className="text-2xl mr-4 mt-1">💍</div>
+              <div>
+                <h3 className="text-xl font-semibold text-header mb-2">Commitment</h3>
+                <p className="text-gray-600">
+                  We help you reflect on your dedication to a long-term relationship built on trust and
+                  shared vision. This includes your views on marriage, family, and emotional readiness for
+                  lifelong partnership.
                 </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
-                    <Heart className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-header">James & Maria</p>
-                    <p className="text-sm text-gray-500">Married 2 years</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
 
-            <Card className="bg-gray-50 shadow-lg">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-6 italic">
-                  "The counseling sessions prepared us for marriage in ways we never expected. We're stronger because of
-                  SteppingStones."
+            {/* Compatibility */}
+            <div className="flex items-start">
+              <div className="text-2xl mr-4 mt-1">🔍</div>
+              <div>
+                <h3 className="text-xl font-semibold text-header mb-2">Compatibility</h3>
+                <p className="text-gray-600">
+                  Through <span className="font-semibold">questionnaires, interviews, and personality profiling</span>,
+                  we explore your values, communication style, and emotional needs to find a match that
+                  truly fits — someone who complements who you are.
                 </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
-                    <Heart className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-header">David & Lisa</p>
-                    <p className="text-sm text-gray-500">Married 1 year</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-gray-50 shadow-lg">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 mb-6 italic">
-                  "Professional, caring, and incredibly effective. They understood exactly what we were looking for in
-                  each other."
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center mr-4">
-                    <Heart className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-header">Alex & Sophie</p>
-                    <p className="text-sm text-gray-500">Engaged</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           </div>
+
+          {/* Closing Quote */}
+          <p className="text-center italic text-gray-500 text-lg">
+            “You’ll understand yourself more than you ever did before.”
+          </p>
         </div>
       </section>
 
