@@ -212,7 +212,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-prata text-header mb-4">Carl</h3>
                 <p className="text-gray-600 mb-4">Certified Matchmaker</p>
                 <p className="text-sm text-gray-500">
-                  Carl brings nearly a decade of experience in community engagement and relational support, backed by a Postgraduate Diploma in Social Work from NUS. With over 30 years of marriage experience and a deep understanding of interpersonal dynamics, Carl combines empathy and insight to guide individuals toward meaningful, lasting connections. He is passionate about helping others find the right match built on shared values and long-term compatibility.
+                  Carl has almost a decade of contributing to community service, with practice anchored around a Postgraduate Diploma in Social Work from NUS.  Married for over 30 years with 2 sons.  He is a certified matchmaker.
                 </p>
               </CardContent>
             </Card>
@@ -225,7 +225,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-prata text-header mb-4">Eulene</h3>
                 <p className="text-gray-600 mb-4">Certified Matchmaker</p>
                 <p className="text-sm text-gray-500">
-                  Eulene holds a Master of Social Science (Professional Counselling) and a Graduate Diploma in Counselling Psychology. She is certified in Prepare & Enrich and PREP, with extensive training in Restorative Practices and relationship dynamics. As Head of Operations at SteppingStones, she also oversees child placement services. Married for over 30 years and a mother of three, Eulene integrates her deep psychological insight with a heart for helping individuals find partners who complement their values and life goals.
+                  Eulene holds a Master of Social Science (Professional Counselling) and a Graduate Diploma in Counselling Psychology. She is a certified Prepare & Enrich and PREP (Prevention & Relationship Enhancement Programme) counsellor. She is also a certified marriage facilitator. She is trained in Restorative Practices,  and couples counselling. Eulene is also heading the operation at SteppingStones which focuses of child placement with adoptive parents. Married for over 30 years. She is a mother of 2 daughters and a son. She is a certified matchmaker.
                 </p>
               </CardContent>
             </Card>
@@ -238,10 +238,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-prata text-header mb-4">Catherine</h3>
                 <p className="text-gray-600 mb-4">Family Support Specialist</p>
                 <p className="text-sm text-gray-500">
-                  Catherine holds a bachelor's degree in psychology and is trained in Solution Focused Brief Therapy and
-                  Restorative Practices. With 30 years of experience supporting children, at-risk youths, and families,
-                  she now focuses on assisting adoptive parents through SteppingStones. Married for 35 years with no
-                  children.
+                  Catherine holds a bachelor’s degree in psychology. She is trained in Solution Focused Brief Therapy and Restorative Practices. For the past 30 years, she had worked with children of various ages, at-risk youths and families in need providing them with social and emotional support. Her current work involves supporting parents who have adopted through SteppingStones. She is married for 35 years with no children.
                 </p>
               </CardContent>
             </Card>
