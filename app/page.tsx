@@ -210,7 +210,6 @@ export default function HomePage() {
                   <Users className="h-12 w-12 text-primary" />
                 </div>
                 <h3 className="text-xl font-prata text-header mb-4">Carl</h3>
-                <p className="text-gray-600 mb-4">Certified Matchmaker</p>
                 <p className="text-sm text-gray-500">
                   Carl has almost a decade of contributing to community service, with practice anchored around a Postgraduate Diploma in Social Work from NUS.  Married for over 30 years with 2 sons.  He is a certified matchmaker.
                 </p>
@@ -223,7 +222,6 @@ export default function HomePage() {
                   <Heart className="h-12 w-12 text-primary" />
                 </div>
                 <h3 className="text-xl font-prata text-header mb-4">Eulene</h3>
-                <p className="text-gray-600 mb-4">Certified Matchmaker</p>
                 <p className="text-sm text-gray-500">
                   Eulene holds a Master of Social Science (Professional Counselling) and a Graduate Diploma in Counselling Psychology. She is a certified Prepare & Enrich and PREP (Prevention & Relationship Enhancement Programme) counsellor. She is also a certified marriage facilitator. She is trained in Restorative Practices,  and couples counselling. Eulene is also heading the operation at SteppingStones which focuses of child placement with adoptive parents. Married for over 30 years. She is a mother of 2 daughters and a son. She is a certified matchmaker.
                 </p>
@@ -236,7 +234,6 @@ export default function HomePage() {
                   <Sparkles className="h-12 w-12 text-primary" />
                 </div>
                 <h3 className="text-xl font-prata text-header mb-4">Catherine</h3>
-                <p className="text-gray-600 mb-4">Family Support Specialist</p>
                 <p className="text-sm text-gray-500">
                   Catherine holds a bachelor’s degree in psychology. She is trained in Solution Focused Brief Therapy and Restorative Practices. For the past 30 years, she had worked with children of various ages, at-risk youths and families in need providing them with social and emotional support. Her current work involves supporting parents who have adopted through SteppingStones. She is married for 35 years with no children.
                 </p>
